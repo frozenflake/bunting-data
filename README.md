@@ -1,5 +1,7 @@
 # bunting-data
 
+Notice: Download this README.md and read it!!!
+
 This is a spring plugin mapping SQL statement to an java interface's method using annotations.
 It's simple to use and easy to integrated with your own spring project.
 To use bunting-data, just need to add maven dependency to your pom.xml like this:
