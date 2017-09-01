@@ -12,9 +12,9 @@ To use bunting-data, just need to add maven dependency to your pom.xml like this
     <version>1.0.0</version>
 </dependency>
 
-In your spring config file, just add a source sanner bean named xxxx to it, this bean will automaticly scan your source packages 
-and instantiate DAO objects implemented your @Dao annotationed interfaces,and compose a SQL statement with SqlMapper annotations
-when invoking and return a instance type of the method returned(by reflect).
+In your spring config file, just add a source sanner bean InterfaceDaoScanConfigurer to it, 
+this bean will automaticly scan your source packages and instantiate DAO objects implemented your @Dao annotationed interfaces,
+and compose a SQL statement with SqlMapper annotations when invoking and return a instance type of the method returned(by reflection).
 
 <bean id="daoScanConfigurer" class="hk.linktech.framework.bunting.data.spring.InterfaceDaoScanConfigurer">
    <property name="basePackage"><value>somepackage</value></property>
